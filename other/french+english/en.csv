@@ -1,0 +1,201 @@
+text,language,label
+Hello,en,non-insult
+Hi,en,non-insult
+Thanks,en,non-insult
+Okay,en,non-insult
+Yes,en,non-insult
+No,en,non-insult
+Sure,en,non-insult
+Please,en,non-insult
+Welcome,en,non-insult
+Goodbye,en,non-insult
+Cheers,en,non-insult
+Congrats,en,non-insult
+Wow,en,non-insult
+Amazing,en,non-insult
+Great,en,non-insult
+Perfect,en,non-insult
+Wonderful,en,non-insult
+Excellent,en,non-insult
+Bravo,en,non-insult
+Alright,en,non-insult
+Cool,en,non-insult
+Sweet,en,non-insult
+Sorry,en,non-insult
+Fine,en,non-insult
+Indeed,en,non-insult
+Respect,en,non-insult
+Peace,en,non-insult
+Friend,en,non-insult
+Lovely,en,non-insult
+Nice,en,non-insult
+Kind,en,non-insult
+Smile,en,non-insult
+Trust,en,non-insult
+Hope,en,non-insult
+Relax,en,non-insult
+Patience,en,non-insult
+Joy,en,non-insult
+Bless,en,non-insult
+Faith,en,non-insult
+Dream,en,non-insult
+Shine,en,non-insult
+Create,en,non-insult
+Inspire,en,non-insult
+Believe,en,non-insult
+Care,en,non-insult
+Love,en,non-insult
+Honor,en,non-insult
+Empathy,en,non-insult
+Compassion,en,non-insult
+Unity,en,non-insult
+Good morning,en,non-insult
+Good night,en,non-insult
+Thank you,en,non-insult
+Take care,en,non-insult
+Stay safe,en,non-insult
+Well done,en,non-insult
+Good job,en,non-insult
+Happy day,en,non-insult
+Best wishes,en,non-insult
+Much love,en,non-insult
+Great work,en,non-insult
+Nice try,en,non-insult
+Well played,en,non-insult
+Good luck,en,non-insult
+My pleasure,en,non-insult
+Happy birthday,en,non-insult
+Merry Christmas,en,non-insult
+Happy holidays,en,non-insult
+Safe travels,en,non-insult
+Happy anniversary,en,non-insult
+Enjoy yourself,en,non-insult
+Rest well,en,non-insult
+Have fun,en,non-insult
+Stay strong,en,non-insult
+Much respect,en,non-insult
+God bless,en,non-insult
+Happy weekend,en,non-insult
+Sweet dreams,en,non-insult
+Stay positive,en,non-insult
+Warm regards,en,non-insult
+All set,en,non-insult
+Be kind,en,non-insult
+Be happy,en,non-insult
+Be well,en,non-insult
+Best regards,en,non-insult
+Keep smiling,en,non-insult
+Keep going,en,non-insult
+Stay humble,en,non-insult
+Good vibes,en,non-insult
+Good stuff,en,non-insult
+Much appreciated,en,non-insult
+You're welcome,en,non-insult
+Take it easy,en,non-insult
+Great effort,en,non-insult
+Good times,en,non-insult
+Well deserved,en,non-insult
+Big thanks,en,non-insult
+Safe journey,en,non-insult
+You're awesome,en,non-insult
+thanks for help,en,non-insult
+Idiot,en,insult
+Stupid,en,insult
+Moron,en,insult
+Fool,en,insult
+Jerk,en,insult
+Loser,en,insult
+Dumb,en,insult
+Pathetic,en,insult
+Useless,en,insult
+Lame,en,insult
+Scumbag,en,insult
+Trash,en,insult
+Coward,en,insult
+Weirdo,en,insult
+Creep,en,insult
+Gross,en,insult
+Dumbass,en,insult
+Worthless,en,insult
+Bastard,en,insult
+Pig,en,insult
+Disgusting,en,insult
+Douche,en,insult
+Freak,en,insult
+Clown,en,insult
+Imbecile,en,insult
+Psycho,en,insult
+Shut up,en,insult
+Asshole,en,insult
+Wimp,en,insult
+Dipshit,en,insult
+Nitwit,en,insult
+Retard,en,insult
+Twit,en,insult
+Degenerate,en,insult
+Rat,en,insult
+Slob,en,insult
+Dunce,en,insult
+Dirtbag,en,insult
+Wretch,en,insult
+Sicko,en,insult
+Nutcase,en,insult
+Blockhead,en,insult
+Bonehead,en,insult
+Dimwit,en,insult
+Airhead,en,insult
+Halfwit,en,insult
+Bozo,en,insult
+Lowlife,en,insult
+Numbskull,en,insult
+Jackass,en,insult
+Dork,en,insult
+Snake,en,insult
+Beast,en,insult
+Grub,en,insult
+Skank,en,insult
+Bimbo,en,insult
+Hag,en,insult
+Goon,en,insult
+Vermin,en,insult
+Sleazeball,en,insult
+Wretch,en,insult
+Vile,en,insult
+Punk,en,insult
+Butthead,en,insult
+Junkie,en,insult
+Prick,en,insult
+Scum,en,insult
+Wanker,en,insult
+Neanderthal,en,insult
+Maggot,en,insult
+Bully,en,insult
+Slimeball,en,insult
+Toad,en,insult
+Worm,en,insult
+Leech,en,insult
+Parasite,en,insult
+Grifter,en,insult
+Scoundrel,en,insult
+Menace,en,insult
+Pest,en,insult
+Vulture,en,insult
+Bastard,en,insult
+Buffoon,en,insult
+Turd,en,insult
+Vandal,en,insult
+Sucker,en,insult
+Boob,en,insult
+Brute,en,insult
+Hooligan,en,insult
+Lout,en,insult
+Pigheaded,en,insult
+Rascal,en,insult
+Thug,en,insult
+Chump,en,insult
+Dirtbag,en,insult
+Sleaze,en,insult
+Dumbbell,en,insult
+Slacker,en,insult
+bitch,en,insult
+slut,en,insult

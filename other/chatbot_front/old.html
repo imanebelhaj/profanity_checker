@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insult Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Insult Detection Chatbot</h1>
+        <form id="insultForm" method="POST" action="/predict" >
+            <label for="text">Enter Text:</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+            <br>
+            <label for="lang">Language:</label>
+            <select id="lang" name="lang">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+            </select>
+            <br>
+            <button type="submit">Check</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

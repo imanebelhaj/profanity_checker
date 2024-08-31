@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Insult Detection</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #eee; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #651FFF;
+        }
+        .main{
+            background-color: #eee;
+            width: 320px;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 6px 0px 0px 0px;
+        }
+        .scroll{
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            height: 325px;
+        }
+        .img1{
+            border-radius: 50%;
+            background-color: #66BB6A;
+        }
+        .name{
+            font-size: 8px;
+        }
+        .msg{
+            background-color: #fff;
+            font-size: 11px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 500;
+            color: #3e3c3c;
+        }
+        .between{
+            font-size: 8px;
+            font-weight: 500;
+            color: #a09e9e;
+        }
+        .navbar{
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .form-control{
+            font-size: 12px;
+            font-weight: 400;
+            width: 230px;
+            height: 30px;
+            border: none;
+        }
+        .form-control:focus{
+            box-shadow: none !important;
+            overflow: hidden;
+            border: none;
+        }
+        .icon1{
+            color: #7C4DFF !important;
+            font-size: 18px !important;    
+            cursor: pointer;
+        }
+        .icon2{
+            color: #512DA8 !important;
+            font-size: 18px !important;
+            position: relative;
+            left: 8px;
+            padding: 0px;
+            cursor: pointer;
+        }
+        .icondiv{
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            padding: 2px;
+            position: relative;
+            bottom: 1px;
+        }
+        .header {
+            background-color: #ffffff;
+            color: #651FFF;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            font-weight: bold;
+            top: 0px;
+            position: fixed;
+            width: 100%;
+        }
+        .header2 {
+            background-color: #ffffffe1;
+            color: #651FFF;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            font-weight: bold;
+            top: 0px;
+        }
+        .footer {
+            background-color: #ffffff;
+            color: #651FFF;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            font-weight: bold;
+            bottom: 0px;
+            position: fixed;
+            width: 100%;
+        }
+        
+
+    </style>
+</head>
+<body className='snippet-body'>
+<div class="wrapper">
+    <div class="header">
+        Profanity Checker
+    </div>
+    <div class="main">
+        <div class="header2">
+            Chatbot stimulator
+        </div>  
+        <div class="px-2 scroll" id="chatbox">
+            <!-- Messages will be dynamically inserted here -->
+        </div>
+        <nav class="navbar bg-white navbar-expand-sm d-flex justify-content-between">
+            <input type="text" id="text-input" class="form-control" placeholder="Type a message...">
+            <div class="icondiv d-flex justify-content-end align-content-center text-center ml-2">
+                <!-- <i class="fa fa-paperclip icon1"></i> --> 
+                 <!-- mybe use this one later for language selection, but i dont think i'll need it --> 
+                <i class="fa fa-arrow-circle-right icon2" id="send-button"></i>  
+            </div>
+        </nav>
+    </div>
+    <!-- <div class="footer">
+        this is the footer
+    </div> -->
+</div>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $('#send-button').on('click', function() {
+            var text = $('#text-input').val();
+            var lang = 'en';  // You can add language selection if needed
+
+            $.ajax({
+                url: '/api/predict',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({text: text, lang: lang}),
+                success: function(response) {
+                    var result = response.result;
+                    $('#chatbox').append('<div class="d-flex align-items-center text-right justify-content-end message-outgoing"><div class="pr-2 pl-1"><span class="name">You</span><p class="msg msg-outgoing">' + text + '</p></div><div><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img1" /></div></div>');
+                    $('#chatbox').append('<div class="d-flex align-items-center text-left pr-1 message-incoming"><div><img src="static/chatbot.png" width="30" /></div><div class="pr-2 pl-1"><span class="name">Chatbot</span><p class="msg msg-incoming">' + result + '</p></div></div>');
+                    $('#text-input').val('');
+                    $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+                },
+                error: function(error) {
+                    console.log('Error:', error);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
