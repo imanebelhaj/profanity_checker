@@ -10,10 +10,8 @@ This project focuses on developing a Natural Language Processing (NLP) model to 
 - [Model Performance](#model-performance)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Overview
 
