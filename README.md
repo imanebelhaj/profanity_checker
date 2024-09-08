@@ -56,6 +56,7 @@ The model was trained and evaluated on a custom dataset of insults and non-insul
 
 
 ## Project Strcuture:
+Project Structure:
 .
 ├── profanity_checker_app/            # Contains the main application files
 │   ├── app.py                        # Main Flask app file
