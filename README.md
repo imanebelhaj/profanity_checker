@@ -56,27 +56,27 @@ The model was trained and evaluated on a custom dataset of insults and non-insul
 
 
 ## Project Strcuture:
-Project Structure:
-.
-├── profanity_checker_app/            # Contains the main application files
-│   ├── app.py                        # Main Flask app file
-│   ├── model/                        # contains the last model :best_model.pkl ; tfidf_vectorizer.pkl
-│   ├── static/                       # Typically used for CSS, JS, and other static resources
-│   └── templates/                    # HTML templates for the web interface
-│
-├── profanity_check_best_model/        # Includes model files and scripts related to the profanity detection model ( all the files used when working on data and ML )
-│   ├── best_model.pkl                # The trained model
-│   ├── fr_en_model.py                # Python script for loading the French-English model
-│   ├── test_english.py               # Script for testing the English model
-│   ├── test_fr_profanity.py          # Script for testing the French profanity model
-│   └── tfidf_vectorizer.pkl          # The vectorizer used for transforming the text data
-│
-├── other/                            # Includes resources and files for different languages and chatbot functionalities
-│   ├── arabic/                       # Contains Arabic language resources
-│   ├── chatbot_front/                # Front-end resources for chatbot
-│   ├── english/                      # Contains English language resources
-│   └── french/                       # Contains French language resources
 
+- **`profanity_checker_app/`**: Contains the main application files.
+  - `app.py`: Main Flask application file.
+  - `model/`: Contains the trained model and vectorizer.
+    - `best_model.pkl`: The trained model.
+    - `tfidf_vectorizer.pkl`: The vectorizer used for transforming the text data.
+  - `static/`: Typically used for CSS, JS, and other static resources.
+  - `templates/`: HTML templates for the web interface.
+
+- **`profanity_check_best_model/`**: Includes files related to the profanity detection model.
+  - `best_model.pkl`: The trained model.
+  - `fr_en_model.py`: Script for loading the French-English model.
+  - `test_english.py`: Script for testing the English model.
+  - `test_fr_profanity.py`: Script for testing the French profanity model.
+  - `tfidf_vectorizer.pkl`: The vectorizer used for transforming the text data.
+
+- **`other/`**: Additional resources and files.
+  - `arabic/`: Arabic language resources.
+  - `chatbot_front/`: Front-end resources for the chatbot.
+  - `english/`: English language resources.
+  - `french/`: French language resources.
 
 
 ## Installation
