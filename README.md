@@ -8,6 +8,7 @@ This project focuses on developing a Natural Language Processing (NLP) model to 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Model Performance](#model-performance)
+- -[Project Strcture](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Future Work](#future-work)
@@ -39,6 +40,7 @@ The insult detection chatbot leverages machine learning algorithms and NLP techn
 
 The model was trained and evaluated on a custom dataset of insults and non-insults, resulting in the following performance metrics:
 
+
 ### French Dataset:
 - **Accuracy**: 99.7%
 - **Precision**: 100%
@@ -50,6 +52,31 @@ The model was trained and evaluated on a custom dataset of insults and non-insul
 - **Precision**: 94%
 - **Recall**: 94%
 - **F1-Score**: 94%
+
+
+
+## Project Strcuture:
+.
+├── profanity_checker_app/            # Contains the main application files
+│   ├── app.py                        # Main Flask app file
+│   ├── model/                        # contains the last model :best_model.pkl ; tfidf_vectorizer.pkl
+│   ├── static/                       # Typically used for CSS, JS, and other static resources
+│   └── templates/                    # HTML templates for the web interface
+│
+├── profanity_check_best_model/        # Includes model files and scripts related to the profanity detection model ( all the files used when working on data and ML )
+│   ├── best_model.pkl                # The trained model
+│   ├── fr_en_model.py                # Python script for loading the French-English model
+│   ├── test_english.py               # Script for testing the English model
+│   ├── test_fr_profanity.py          # Script for testing the French profanity model
+│   └── tfidf_vectorizer.pkl          # The vectorizer used for transforming the text data
+│
+├── other/                            # Includes resources and files for different languages and chatbot functionalities
+│   ├── arabic/                       # Contains Arabic language resources
+│   ├── chatbot_front/                # Front-end resources for chatbot
+│   ├── english/                      # Contains English language resources
+│   └── french/                       # Contains French language resources
+
+
 
 ## Installation
 
