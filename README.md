@@ -4,6 +4,8 @@ This project focuses on developing a Natural Language Processing (NLP) model to 
 
 ## Table of Contents
 
+- [Report](#report)
+- [Stimulation Video](#stimulation-video)
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -13,6 +15,13 @@ This project focuses on developing a Natural Language Processing (NLP) model to 
 - [Usage](#usage)
 - [Future Work](#future-work)
 
+## Report
+
+You can view the full report of this project [here](https://drive.google.com/file/d/1Ho7x1m06pqlljRAGtV4UHLkZCRiP34YA/view?usp=drive_link).
+
+## Stimulation Video
+
+You can watch the stimulation video of the model in action [here](https://drive.google.com/file/d/1v6sc1n26H77dlk5Zhsd9BJ6u22lWnMtH/view?usp=drive_link).
 
 ## Project Overview
 
